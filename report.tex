@@ -1,7 +1,9 @@
 \documentclass{article}
 \usepackage{amsmath,ctex,circuitikz,subfig,caption,geometry,booktabs,pgfplotstable,pgfplots, mathabx, booktabs}
+\usepackage{pbox}
 \geometry{a4paper,scale=0.8}
 \ctikzset{european}
+\newcommand{\ctikzlabel}[2]{\pbox{\textwidth}{#1\\#2}} % 元件多行标签
 \newcommand{\ee}{\mathrm{e}}
 \newcommand{\dd}{\mathrm{d}}
 \begin{document}
@@ -16,11 +18,11 @@
         \vspace{0.1cm}
 
     
-        \large{实验题目}
+        \huge{\textit{实验题目}}
 
 
         \vspace{2cm}%上下两个Enter
-
+        \large{}
         \bigskip
 
         \vspace{2cm}%上下两个Enter
